@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" 
+    android:id="@+id/rl_parent">
+
+    <com.xm.video.MySurfaceView
+        android:id="@+id/video"
+        android:layout_width="1000dp"
+        android:layout_height="500dp" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/video"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="A泵"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/bt1"
+        android:text="旋转"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/bt2"
+        android:text="旋喷"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/bt3"
+        android:text="补口行走"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="B泵"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/bt5"
+        android:text="除锈"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/bt6"
+        android:text="张开"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/bt7"
+        android:text="除锈行走"
+        android:textSize="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_changecamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+              >
+
+            <RadioGroup
+                android:id="@+id/rg_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="摄像头1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="摄像头2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="摄像头3"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="摄像头4"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+
+           <Button
+            android:id="@+id/bt_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换摄像头" 
+            android:layout_above="@+id/rl_changecamara"
+            android:layout_alignParentRight="true"
+            android:textSize="30dp"
+            /> 
+</RelativeLayout>
